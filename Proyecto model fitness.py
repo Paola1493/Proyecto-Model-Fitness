@@ -1,66 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# # Proyecto 13
-
-# Hola Paola!
-# 
-# Soy **Patricio Requena** 👋. Es un placer ser el revisor de tu proyecto el día de hoy!
-# 
-# Revisaré tu proyecto detenidamente con el objetivo de ayudarte a mejorar y perfeccionar tus habilidades. Durante mi revisión, identificaré áreas donde puedas hacer mejoras en tu código, señalando específicamente qué y cómo podrías ajustar para optimizar el rendimiento y la claridad de tu proyecto. Además, es importante para mí destacar los aspectos que has manejado excepcionalmente bien. Reconocer tus fortalezas te ayudará a entender qué técnicas y métodos están funcionando a tu favor y cómo puedes aplicarlos en futuras tareas. 
-# 
-# _**Recuerda que al final de este notebook encontrarás un comentario general de mi parte**_, empecemos!
-# 
-# Encontrarás mis comentarios dentro de cajas verdes, amarillas o rojas, ⚠️ **por favor, no muevas, modifiques o borres mis comentarios** ⚠️:
-# 
-# 
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# Si todo está perfecto.
-# </div>
-# 
-# <div class="alert alert-block alert-warning">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# Si tu código está bien pero se puede mejorar o hay algún detalle que le hace falta.
-# </div>
-# 
-# <div class="alert alert-block alert-danger">
-# <b>Comentario del revisor</b> <a class=“tocSkip”></a>
-# Si de pronto hace falta algo o existe algún problema con tu código o conclusiones.
-# </div>
-# 
-# Puedes responderme de esta forma:
-# <div class="alert alert-block alert-info">
-# <b>Respuesta del estudiante</b> <a class=“tocSkip”></a>
-# </div>
 
 # Con el fin de combatir la cancelación, Model Fitness ha digitalizado varios de sus perfiles de clientes. Tu tarea consiste en analizarlos y elaborar una estrategia de retención de clientes.
 # 
-# Tienes que:
-# 
-# Aprender a predecir la probabilidad de pérdida (para el próximo mes) para cada cliente.
-# 
-# Elaborar retratos de usuarios típicos: selecciona los grupos más destacados y describe sus características principales.
-# 
-# Analizar los factores que más impactan la pérdida.
-# 
-# Sacar conclusiones básicas y elaborar recomendaciones para mejorar la atención al cliente:
-# 
-# identificar a los grupos objetivo;
-# 
-# sugerir medidas para reducir la rotación;
-# 
-# describir cualquier otro patrón que observes con respecto a la interacción con los clientes.
-
-# <div class="alert alert-block alert-warning">
-# <b>Comentario del revisor (1ra Iteracion)</b> <a class=“tocSkip”></a>
-# 
-# Buen trabajo incluyendo esta sección para explicar el proyecto, te recomendaría que agregues una sección más donde hagas un breve resumen de lo que trata el proyecto y su objetivo a parte de lo que ya se detalló
-# </div>
-
-# In[1]:
-
-
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -74,16 +15,6 @@ from sklearn.cluster import KMeans
 from scipy.cluster.hierarchy import dendrogram, linkage
 import scipy.cluster.hierarchy as sch
 
-
-# <div class="alert alert-block alert-info">
-# <b>Comentario del revisor (1ra Iteracion)</b> <a class=“tocSkip”></a>
-# 
-# Una buena práctica para cuando tengas que importar varias librerías es seguir el siguiente órden en las mismas:
-# 
-# - Primero todas las librerías que vienen ya con python cómo `datetime`, `os`, `json`, etc.
-# - Luego de las librerías de Python si las de terceros cómo `pandas`, `scipy`, `numpy`, etc.
-# - Por último, en el caso de que armes tu propio módulo en tu proyecto esto debería ir en tercer lugar, y recuerda siempre ordenar cada tipo por orden alfabético
-# </div>
 
 # ## Análisis exploratorio de datos (EDA)
 
@@ -158,12 +89,6 @@ sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
 plt.title('Matriz de Correlación')
 plt.show()
 
-
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor (1ra Iteracion)</b> <a class=“tocSkip”></a>
-# 
-# Correcto! la visualización es muy clara para poder comparar
-# </div>
 
 # ## Construir un modelo para predecir la cancelación de usuarios
 
@@ -365,15 +290,4 @@ print("Tasa de cancelación para cada clúster:\n", cancellation_rate)
 # 1. Actualizaciones basadas en feedback: Utilizar la retroalimentación de usuarios leales para implementar nuevas mejoras que también podrían atraer y retener a usuarios de otros clústeres.
 # 
 # 2. Pruebas A/B: Realizar pruebas A/B con diferentes mejoras en características específicas para ver cuál tiene el mayor impacto en la satisfacción y retención de usuarios.
-# 
-# 
 
-# <div class="alert alert-block alert-info">
-# <b>Comentario general (1ra Iteracion)</b> <a class=“tocSkip”></a>
-# 
-# Desarrollaste un proyecto muy bueno y lograste obtener los resultados esperados acorde a las instrucciones dadas, además tus recomendaciones al final son muy buenas y se nota la relación que tienen con el proceso de análisis y entrenamiento de los modelos que realizaste con anterioridad.
-#     
-# Veo que incluso incluiste en ciertos puntos tu interpretación de las gráficas mostradas, te recomiendo que apliques esto para el resto de gráficas ya que algunos quedaron sin comentarios. El poner tu interpretación agiliza el entender el proceso de análisis cuando alguien más en tu equipo quiera usar tu notebook.
-#     
-# Saludos!
-# </div>
