@@ -1,17 +1,13 @@
-Con el fin de combatir la cancelación, Model Fitness ha digitalizado varios de sus perfiles de clientes. Tu tarea consiste en analizarlos y elaborar una estrategia de retención de clientes.
+Con el fin de combatir la cancelación, Model Fitness ha digitalizado varios de sus perfiles de clientes. La tarea consiste en analizarlos y elaborar una estrategia de retención de clientes.
 
-Objetivos:
+**Habilidades técnicas:**
+* pandas
+* seaborn
+* matplotlib
+* sklearn
+* scipy
 
-Predecir la probabilidad de pérdida.
- 
-Elaborar retratos de usuarios típicos.
 
-Analizar los factores que más impactan la pérdida.
+**Conclución:**
 
-Sacar conclusiones básicas y elaborar recomendaciones para mejorar la atención al cliente:
-
-identificar a los grupos objetivo;
-
-sugerir medidas para reducir la rotación
-
-describir cualquier otro patrón con respecto a la interacción con los clientes.
+El análisis sugiere que el nivel de actividad de los clientes y el tiempo que llevan como miembros del gimnasio son factores clave para predecir la cancelación de sus membresías. Aquellos clientes con menor participación y un tiempo más corto en el gimnasio tienen una mayor probabilidad de cancelar. El modelo de Random Forest mostró un buen rendimiento para predecir estas cancelaciones, lo que permite a Model Fitness implementar estrategias preventivas específicas, como programas de reactivación para clientes inactivos o incentivos para los nuevos miembros, mejorando así la retención.
